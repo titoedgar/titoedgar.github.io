@@ -1,0 +1,217 @@
+:root {
+/* CSS HSL */
+--aero: hsla(213, 59%, 73%, 1);
+--blue-yonder: hsla(213, 24%, 47%, 1);
+--vivid-sky-blue: hsla(192, 97%, 50%, 1);
+--prussian-blue: hsla(214, 39%, 17%, 1);
+--lavender-web: hsla(222, 40%, 90%, 1);
+margin: auto;
+margin-bottom: 50px;
+max-width: 850px;
+
+}
+
+
+p img, li img, h1 img, h2 img, h3 img, h4 img {
+	max-height: 1em;
+	max-width: 1em;
+}
+main {
+	margin: auto ;
+	color: #ddd ;
+	background: rgba(0,0,0,.3) ;
+	padding: 20px ;
+	/*border-radius: 50px ;*/
+}
+
+strong { color: white ; }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: var(--prussian-blue);
+  overflow: hidden;
+  /*border-radius: 20px;*/
+  padding:-20px; 
+  margin: auto
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: var(--lavender-web);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: var(--aero);
+  color: white;
+}
+
+a strong { color: lime ; }
+details { padding-left: 20px ; text-decoration: underline; }
+
+pre {
+	background: #222 ;
+	border: 1px solid lime ;
+	border-radius: 20px ;
+	padding: 20px ;
+	margin: 30px ;
+}
+
+code {
+	background: #222 ;
+	color: lime ;
+	border-radius: 5px ;
+}
+
+ul {
+	list-style: decimal ;
+	margin-left: 20px ;
+	margin-right: 20px ;
+}
+
+.profilephoto{ 
+	float: right ;
+	display: block ;
+	border: 2px solid ;
+	border-radius: 10px ;
+	margin: auto ;
+       	max-width: 25%	
+}
+li img, p img {
+	max-height: 1em ;
+	max-width: 1em ;
+}
+
+html {
+	padding-top: 10px;
+	background: linear-gradient(var(--prussian-blue), black) no-repeat fixed ;
+	margin-bottom: 500px;
+}
+
+h1,h2,h3,h4 { 
+	text-align: center ; 
+	color: var(--aero)}
+
+/*h1 { color: var(--aero) ; }
+
+h2 { color: var(--aero) ; }
+
+h3 { color: #04C9FA ; }
+
+h4 { color: #1B2A3E ; }
+*/
+a { color: var(--vivid-sky-blue) ;}
+
+a:hover { color: greenyellow ;}
+.new a:hover { color: greenyellow ; }
+
+
+dt { font-weight: bold ; color: lightgray ; }
+
+.resright {
+	display: block ;
+	margin: auto ;
+	max-width: 90% ;
+}
+
+.titleimg {
+	display: block ;
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+}
+
+.lol {
+	padding: .25em ;
+}
+
+.lol ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+/* .lol li { */
+/* 	padding: 1px ; */
+/* } */
+
+@media (min-width: 55em) {
+
+    /* nav { */
+    /*     position: fixed; */
+    /* } */
+    /* nav li { */
+    /*     display: block ; */
+    /*     margin: 10px ; */
+    /* } */
+
+	.lol { display: inline-block; vertical-align: top ; }
+
+	.resright, .disappear {
+		display: block ;
+		float: right;
+		padding: 20px ;
+		clear: both ;
+		max-height: 300px ;
+		max-width: 200px ;
+	}
+
+	.resmid {
+		max-height: 300px ;
+		max-width: 300px ;
+	}
+
+	main { max-width: 850px ; }
+
+	.column {
+		float: left;
+		width: 50% ;
+	}
+
+}
+footer {
+	font-size: large ;
+	margin: auto ;
+	max-width: 500px ;
+}
+
+.entry p, .entry li { margin-left: 2em ; }
+
+figure img { max-width: 100% ; margin: auto ; }
+
+figcaption { font-style: italic ; font-size: small ; }
+
+figure { text-align: center; }
+
+#toc {
+	font-size: x-large ;
+	margin-left: auto ;
+	margin-right: auto ;
+	max-width: 500px ;
+
+}
+
+#toc li { padding: 5px }
+
+.new::after {
+	content: " 🆕" ;
+	/* content: " (New 🎁)" ; */
+	color: goldenrod ;
+}
+
+.i a { color: green ;}
+.d a { color: red ;}
+
+/* For QR codes for bitcoin and crypto */
+.qr { max-width: 150px ; padding: 10px }
